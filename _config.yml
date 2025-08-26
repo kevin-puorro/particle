@@ -1,7 +1,7 @@
 # Site settings
 title: Kevin Puorro - Data Scientist & Sports Analytics Professional
 description: Data Analyst specializing in sports analytics, statistical modeling, and business intelligence. Experience with Power BI, Python, and serving 100+ college football programs.
-baseurl: "/particle" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://kevin-puorro.github.io" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
 
 # User settings

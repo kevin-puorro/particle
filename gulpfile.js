@@ -2,21 +2,32 @@ var gulp = require('gulp');
 var csso = require('gulp-csso');
 var uglify = require('gulp-uglify');
 var concat = require('gulp-concat');
-var sass = require('gulp-sass');
+var sass = require('gulp-dart-sass');
 var plumber = require('gulp-plumber');
 var cp = require('child_process');
 var imagemin = require('gulp-imagemin');
 var browserSync = require('browser-sync');
 
-var jekyllCommand = (/^win/.test(process.platform)) ? 'jekyll.bat' : 'jekyll';
+var jekyllCommand = (/^win/.test(process.platform)) ? 'C:\\Ruby34-x64\\bin\\jekyll.bat' : 'jekyll';
 
 /*
  * Build the Jekyll Site
  * runs a child process in node that runs the jekyll commands
  */
 gulp.task('jekyll-build', function (done) {
-	return cp.spawn(jekyllCommand, ['build'], {stdio: 'inherit'})
-		.on('close', done);
+	if (/^win/.test(process.platform)) {
+		// Use exec for Windows compatibility
+		return cp.exec('"C:\\Ruby34-x64\\bin\\jekyll.bat" build', {stdio: 'inherit'}, function(err, stdout, stderr) {
+			if (err) {
+				console.error('Jekyll build error:', err);
+			}
+			done();
+		});
+	} else {
+		// Use spawn for Unix systems
+		return cp.spawn(jekyllCommand, ['build'], {stdio: 'inherit'})
+			.on('close', done);
+	}
 });
 
 /*

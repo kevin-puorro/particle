@@ -5,13 +5,12 @@ description: A blog about lorem ipsum dolor sit amet
 # url: "localhost:3000" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
 
 # User settings
-username: Anon Developer
-user_description: Bicycle rights irony actually neutra typewriter lyft. Man bun taxidermy put a bird on it, umami yr ramps pop-up ugh bushwick chia lo-fi. Occupy bitters pour-over snackwave you probably haven't heard of them small batch. Cornhole mustache man bun letterpress echo park VHS.
-user_title: Software Developer
-email: anon@anon.com
-twitter_username: lorem_ipsum
-github_username:  lorem_ipsum
-gplus_username:  lorem_ipsum
+username: Kevin Puorro
+user_description: I'm a data scientist and analyst in Pittsburgh, Pennsylvania, originally from San Jose, California. I earned my Bachelor's in Statistics from Baylor University and am currently finishing my Master's in Data Science at Pitt. I'm currently working as a Data Analyst at Championship Analytics, serving 100+ college football programs nationwide. I'm passionate about sports analytics, business analytics, and using data to help organizations make smarter decisions. I'm always open to new opportunities and collaborations with any who are interested.
+user_title: Data Analyst
+email: kevin.puorro@hotmail.com
+linkedin_username: kevin-puorro-b765b9263
+# github_username: kevin-puorro
 
 # Google-analytics
 google-analytics:
